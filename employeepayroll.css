@@ -1,4 +1,4 @@
-
+/* UC1 */
 body {
     margin: 0;
     height: 100%;
@@ -46,7 +46,7 @@ body {
 *{
  box-sizing: border-box;   
 }
-
+/* UC2 */
 .form-content{
     min-height: calc(100%-80px);
     background-color: #f7f7f7;
@@ -106,7 +106,7 @@ label{
     border-radius: 4px;
     resize: vertical;
 }
-
+/* UC3 */
 .profile-radio-content {
     display: flex;
     flex-direction: row;
@@ -123,4 +123,15 @@ label{
     border-radius: 50%;
     margin-left: 12px;
 }
-Footer
+/* UC5 */
+select {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+}
+
