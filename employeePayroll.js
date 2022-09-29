@@ -75,7 +75,12 @@ class EmployeePayrollData {
     }
 
     set startDate(startDate) {
-        this._startDate = startDate;
+        let future = new Date();
+        future.setDate(future.getDate() + 30);
+        if (startDate < new Date() || startDate < future)
+            this._startDate = startDate;
+        else
+            throw "Start Date is Incorrect";
     }
 
     get notes() {
@@ -95,7 +100,6 @@ class EmployeePayrollData {
 }
 
 function save() {
-
     let employeeName = document.querySelector('#name').value;
     let profileList = document.querySelectorAll('input[name="profile"]');
     let employeeProfileImage;
